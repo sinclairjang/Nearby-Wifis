@@ -1,0 +1,68 @@
+h1 {
+	position: relative;
+	text-align: center;
+	background-color: #efefef;
+	padding: 10 10 20 
+}
+#logo {
+	position: relative;
+	top: -10px; left: -20px;
+}
+#lat-label {
+	padding-left: 20px;
+}
+p.lat, p.lnt {
+	width: 80px;
+	display: inline;
+}
+a.prev {
+    color: black;
+    float: left;
+    padding: 8px 18px 5px;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0;
+    position: relative;
+    left: 10px; 
+    bottom: 8;
+}
+a.prev:hover {background-color: #ddd;}
+
+body {
+	font-family: Arial, Verdana, sans-serif;
+	color: #111111;
+	border-style: solid;
+	}
+table {
+	width: 100%;
+	table-layout: fixed;
+	}
+th, td {
+	padding: 7px 10px 10px 10px;
+	font-size: 70%;
+	}
+.delete {
+	margin-left: auto;
+   	margin-right: auto;
+	display: table-cell;
+}
+.delete:hover {
+	width: 22px;
+	height: 22px;}
+th {
+	background-color: #9e9e9e;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	border-bottom: 2px solid #111111;
+	border-top: 1px solid #999;
+	text-align: left;
+	}
+tr {
+	height: 40px;
+}
+tr.even {
+	background-color: #efefef;
+	}
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+						http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+	id="WebApp_ID" 
+	version="4.0">
+	
+	  <display-name>NearbyWifis</display-name>
+	  <welcome-file-list>
+	    <welcome-file>index.html</welcome-file>
+	  </welcome-file-list>
+	  
+	  <context-param>
+	  	<param-name>url</param-name>
+	  	<param-value>jdbc:mariadb://localhost:3306/public_wifi_db</param-value>
+	  </context-param>
+	  
+	  <context-param>
+	  	<param-name>user</param-name>
+	  	<param-value>public_wifi_user</param-value>
+	  </context-param>
+	  
+	  <context-param>
+	  	<param-name>password</param-name>
+	  	<param-value>1234</param-value>
+	  </context-param>
+  
+	 <jsp-config>
+	    <jsp-property-group>
+	        <url-pattern>*.jsp</url-pattern>
+	        <page-encoding>UTF-8</page-encoding>
+	        <scripting-invalid>false</scripting-invalid>
+	        <default-content-type>text/html</default-content-type>
+	    </jsp-property-group>
+	</jsp-config>
+	
+	<session-config>
+	    <session-timeout>30</session-timeout>
+	    <cookie-config>
+	        <http-only>true</http-only>
+	    </cookie-config>
+	    <tracking-mode>COOKIE</tracking-mode>
+	</session-config>
+
+</web-app>

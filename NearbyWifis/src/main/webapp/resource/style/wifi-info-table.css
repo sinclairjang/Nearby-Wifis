@@ -1,0 +1,110 @@
+h1 {
+	position: relative;
+	text-align: center;
+	background-color: #efefef;
+	padding: 10 10 20 
+}
+#logo {
+	position: relative;
+	top: -10px; left: -20px;
+}
+#lat-label {
+	padding-left: 10px;
+}
+#lat #lnt {
+	width: 80px;
+}
+#loc {
+    width: 320px;
+    display: inline;
+    padding-left: 3em;
+}
+
+#geo {
+	display: inline;
+}
+form {
+	display: inline;
+}
+a.history {
+    color: black;
+    float: right;
+    display: inline;
+    padding: 4px 10px 4px;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 2px solid #ddd;
+    margin: 0;
+    position: relative;
+    right: 10px;
+    bottom: 4;
+}
+a.history:hover {background-color: #ddd;}
+body {
+	font-family: Arial, Verdana, sans-serif;
+	color: #111111;
+	border-style: solid;
+	}
+p.guide {
+	text-align: center;
+	color: #9e9e9e;
+}
+table {
+	width: 100%;
+	padding-top: 10px;
+	}
+th, td {
+	padding: 7px 10px 10px 10px;
+	font-size: 40%;
+	}
+th {
+	background-color: #9e9e9e;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	border-bottom: 2px solid #111111;
+	border-top: 1px solid #999;
+	text-align: left;
+	}
+th.dynamic {
+	background-color: #9e9e9e;
+	opacity: 0.4;
+}
+tr.even {
+	background-color: #efefef;
+	}
+	
+.container { 
+	height: 50px;
+	position: relative;
+}
+
+.pagination a.prev {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.pagination a.next{
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}

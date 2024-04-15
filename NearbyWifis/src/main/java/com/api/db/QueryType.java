@@ -1,0 +1,12 @@
+package com.api.db;
+
+public enum QueryType {
+	CREATE,
+	INSERT,
+	SELECT_ALL,
+	SELECT_LIMIT,
+	SELECT_WHERE,
+	SELECT_NATURAL_JOIN,
+	UPDATE,
+	DELETE
+}
